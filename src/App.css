@@ -1,0 +1,249 @@
+/* NORMALIZACIÓN */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+/* Header personalizado */
+.navbar {
+  padding: 15px 3%;
+  background-color: transparent !important;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-brand.logo {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+
+.nav-link {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  margin-left: 60px;
+  border-bottom: 2px solid transparent;
+  transition: all .5s ease !important;
+  color: white;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid white !important;
+}
+
+/* Hero Section */
+.hero {
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #00ff88;
+}
+
+.hero-text h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+  line-height: 1;
+  margin: 0 0 30px;
+}
+
+.hero-text p {
+  font-size: 80%;
+  margin-bottom: 40px;
+  line-height: 1.9;
+}
+
+.hero-img img {
+  width: 400px;
+  height: auto;
+  transition: all 5s linear;
+}
+
+.hero-img img:hover {
+  width: 450px;
+  opacity: 0.6;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #4d4d4d !important;
+  border: 1px solid transparent !important;
+  padding: 15px 30px !important;
+  border-radius: 30px !important;
+  text-transform: uppercase;
+  transition: all .5s ease !important;
+}
+
+.btn-primary:hover {
+  background-color: transparent !important;
+  border: 1px solid white !important;
+  transform: translateX(8px);
+}
+
+.btn-outline-light {
+  border: 1px solid white !important;
+  padding: 15px 30px !important;
+  border-radius: 30px !important;
+}
+
+/* Iconos sociales */
+.social-icons {
+  position: fixed;
+  left: 40px;
+  bottom: 300px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+.social-icons a:hover {
+  color: #4d4d4d !important;
+  transform: translateY(-5px);
+}
+
+/* Scroll down */
+.scroll-down {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+
+.scroll-down a {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+.fresh-graduate {
+  color: #2ecc71;
+  font-size: 1.4em;
+  margin-bottom: 25px;
+}
+
+.highlight {
+  background: linear-gradient(120deg, #3498db 30%, #2ecc71 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.strengths-list {
+  border-left: 3px solid #3498db;
+  padding-left: 25px;
+  margin: 20px 0;
+}
+
+.strengths-list li {
+  margin: 12px 0;
+  position: relative;
+  padding-left: 15px;
+}
+
+.strengths-list li::before {
+  content: "▹";
+  position: absolute;
+  left: -10px;
+  color: #3498db;
+}
+
+.tech-badges {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.badge {
+  background: rgba(52, 152, 219, 0.15);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #3498db;
+  font-size: 0.9em;
+  transition: transform 0.3s;
+}
+
+.badge:hover {
+  transform: translateY(-3px);
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero {
+    padding: 100px 3% 50px;
+  }
+
+  .hero-img img {
+    width: 80%;
+  }
+
+  .social-icons,
+  .scroll-down {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 200px;
+    height: 180px;
+    background-color: #021719ef;
+    padding: 30px 20px;
+    transition: all .5s ease-out;
+  }
+
+  .show.navbar-collapse {
+    right: 0;
+  }
+
+  .nav-link {
+    margin-left: 0 !important;
+    margin: 7px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
