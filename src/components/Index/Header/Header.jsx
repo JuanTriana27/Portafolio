@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { RiMenuFill } from "@remixicon/react";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [expanded, setExpanded] = useState(false);
@@ -19,9 +20,9 @@ const Header = () => {
 
                 <Navbar.Collapse id="navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#" onClick={() => setExpanded(false)}>Home</Nav.Link>
+                        <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)}>Home</Nav.Link>
                         <Nav.Link href="#" onClick={() => setExpanded(false)}>Sobre mí</Nav.Link>
-                        <Nav.Link href="#" onClick={() => setExpanded(false)}>Trabajos</Nav.Link>
+                        <Nav.Link as={Link} to="/trabajos" onClick={() => setExpanded(false)}>Trabajos</Nav.Link>
                         <Nav.Link href="#" onClick={() => setExpanded(false)}>Contacto</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
