@@ -21,6 +21,11 @@ const Trabajos = () => {
             title: "TN Shop",
             url: "https://tnshop.netlify.app/",
             ratio: "16/9"
+        },
+        {
+            title: "Ruta del Café Colombiano",
+            url: "https://rutadelcafecolombiano.netlify.app/",
+            ratio: "16/9"
         }
     ];
 
