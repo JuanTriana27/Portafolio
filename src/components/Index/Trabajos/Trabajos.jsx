@@ -26,6 +26,11 @@ const Trabajos = () => {
             title: "Ruta del Café Colombiano",
             url: "https://rutadelcafecolombiano.netlify.app/",
             ratio: "16/9"
+        },
+        {
+            title: "Inmobiliaria En Spring Boot",
+            url: "https://inmobiliariadb.netlify.app/",
+            ratio: "16/9"
         }
     ];
 
