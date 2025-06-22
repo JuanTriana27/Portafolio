@@ -13,6 +13,11 @@ const Trabajos = () => {
             ratio: "16/9"
         },
         {
+            title: "Juego de Dibujo con Spring + React",
+            url: "https://inmobiliariadb.netlify.app/",
+            ratio: "16/9"
+        },
+        {
             title: "Store Fly",
             url: "https://strore-fly.netlify.app/",
             ratio: "16/9"
@@ -28,7 +33,7 @@ const Trabajos = () => {
             ratio: "16/9"
         },
         {
-            title: "Inmobiliaria En Spring Boot",
+            title: "Inmobiliaria En Spring Boot + React",
             url: "https://inmobiliariadb.netlify.app/",
             ratio: "16/9"
         }
