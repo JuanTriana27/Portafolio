@@ -14,7 +14,7 @@ const Trabajos = () => {
         },
         {
             title: "Juego de Dibujo con Spring + React",
-            url: "https://inmobiliariadb.netlify.app/",
+            url: "https://pintandoandamos.netlify.app/",
             ratio: "16/9"
         },
         {
