@@ -80,9 +80,21 @@ const Trabajos = () => {
 
                         {/* Contenedor del proyecto */}
                         <div className="project-container">
-                            <h2 className="project-title mb-4">
+                            <h2 className="project-title mb-2">
                                 {proyectos[currentProjectIndex].title}
                             </h2>
+
+                            {/* Link debajo del título */}
+                            <p className="project-link mb-4">
+                                Para un mejor funcionamiento ingresa:{" "}
+                                <a
+                                    href={proyectos[currentProjectIndex].url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {proyectos[currentProjectIndex].url}
+                                </a>
+                            </p>
 
                             <div className="iframe-force-reset">
                                 <iframe
