@@ -22,16 +22,16 @@ const Trabajos = () => {
             url: "https://strore-fly.netlify.app/",
             ratio: "16/9"
         },
-        {
-            title: "TN Shop",
-            url: "https://tnshop.netlify.app/",
-            ratio: "16/9"
-        },
-        {
-            title: "Ruta del Café Colombiano",
-            url: "https://rutadelcafecolombiano.netlify.app/",
-            ratio: "16/9"
-        },
+        // {
+        //     title: "TN Shop",
+        //     url: "https://tnshop.netlify.app/",
+        //     ratio: "16/9"
+        // },
+        // {
+        //     title: "Ruta del Café Colombiano",
+        //     url: "https://rutadelcafecolombiano.netlify.app/",
+        //     ratio: "16/9"
+        // },
         {
             title: "Inmobiliaria En Spring Boot + React",
             url: "https://inmobiliariadb.netlify.app/",
