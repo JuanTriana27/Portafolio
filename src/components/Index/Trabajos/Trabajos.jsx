@@ -19,7 +19,7 @@ const Trabajos = () => {
         },
         {
             title: "Store Fly",
-            url: "https://strore-fly.netlify.app/",
+            url: "https://tienda-aviones.vercel.app/",
             ratio: "16/9"
         },
         // {
